@@ -7,15 +7,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Concurrency;
 
-// Route::get('/', function () {
-//     [$test, $test2] = Concurrency::run([
-//         fn () => (new TestController)->test(),
-//         fn () => (new TestController)->test2(),
-//     ]);
-
-//     info('test', [$test]);
-//     info('test2', [$test2]);
-// });
 
 
 Route::get('/test-join', function () {
