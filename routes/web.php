@@ -10,24 +10,6 @@ use Illuminate\Support\Facades\Concurrency;
 
 
 Route::get('/test-join', function () {
-    // Query from DB1
-    // $users = DB::connection('mysql')->table('users')->get();
-
-    // // Query from DB2
-    // $orders = DB::connection('mysql2')->table('orders')->get();
-
-    // // Attempt join in PHP
-    // $result = [];
-    // foreach ($users as $user) {
-    //     foreach ($orders as $order) {
-    //         if ($user->id == $order->user_id) {
-    //             $result[] = [
-    //                 'user' => $user->name,
-    //                 'product' => $order->product
-    //             ];
-    //         }
-    //     }
-    // }
     info(Order::all());
     info(User::all());
     $user = User::first();
